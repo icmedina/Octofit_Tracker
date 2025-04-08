@@ -2,7 +2,7 @@
 
 In this step, we will accomplish the following:
 
-- Create the octofit-tracker application directory structure.
+- Create the octofit_tracker application directory structure.
 - Create the octofit-tracker/backend and octofit-tracker/frontend directories.
 - Create the octofit-tracker/backend/requirements.txt file.
 
