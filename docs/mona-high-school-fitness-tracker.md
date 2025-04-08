@@ -653,7 +653,7 @@ npm install react-router-dom --prefix monafit-tracker/frontend
 
 ```json
 {
-  "name": "octofit-tracker",
+  "name": "octofit_tracker",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

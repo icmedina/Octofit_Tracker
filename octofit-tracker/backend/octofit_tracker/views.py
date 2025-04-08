@@ -1,17 +1,17 @@
 from rest_framework import viewsets
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from .serializers import UserSerializer, TeamSerializer, ActivitySerializer, LeaderboardSerializer, WorkoutSerializer
 from .models import User, Team, Activity, Leaderboard, Workout
+from .serializers import UserSerializer, TeamSerializer, ActivitySerializer, LeaderboardSerializer, WorkoutSerializer
 
 @api_view(['GET'])
 def api_root(request, format=None):
     return Response({
-        'users': 'http://localhost:8000/api/users/',
-        'teams': 'http://localhost:8000/api/teams/',
-        'activities': 'http://localhost:8000/api/activities/',
-        'leaderboard': 'http://localhost:8000/api/leaderboard/',
-        'workouts': 'http://localhost:8000/api/workouts/'
+        'users': 'api/users/',
+        'teams': 'api/teams/',
+        'activities': 'api/activities/',
+        'leaderboard': 'api/leaderboard/',
+        'workouts': 'api/workouts/',
     })
 
 class UserViewSet(viewsets.ModelViewSet):

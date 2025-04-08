@@ -1,7 +1,7 @@
 # Build applications with GitHub Copilot agent mode
 
 <!-- ![](https://github.com/icmedina/Octofit_Tracker/actions/workflows/0-start-course.yml/badge.svg?branch=main) -->
-<img src="https://github.com/user-attachments/assets/8c45e716-1d95-473b-8923-dbbbf0f924b2" alt="octofit-tracker-app" width="30%" height="30%"/>
+<img src="https://github.com/user-attachments/assets/8c45e716-1d95-473b-8923-dbbbf0f924b2" alt="octofit_tracker-app" width="30%" height="30%"/>
 
 _Build an application with GitHub Copilot agent mode in less than an hour._
 

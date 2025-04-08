@@ -4,11 +4,15 @@ from django.conf import settings
 from pymongo import MongoClient
 from datetime import timedelta
 from bson import ObjectId
+from django.apps import apps
 
 class Command(BaseCommand):
     help = 'Populate the database with test data for users, teams, activity, leaderboard, and workouts'
 
     def handle(self, *args, **kwargs):
+        # Ensure the Django environment is initialized
+        apps.populate(settings.INSTALLED_APPS)
+
         # Connect to MongoDB
         client = MongoClient(settings.DATABASES['default']['HOST'], settings.DATABASES['default']['PORT'])
         db = client[settings.DATABASES['default']['NAME']]
@@ -36,7 +40,8 @@ class Command(BaseCommand):
         team1.save()
         team2.save()
         for user in users:
-            team1.members.add(user)
+            team1.members.append(user._id)  # Append user IDs to the members list
+        team1.save()
 
         # Create activities
         activities = [

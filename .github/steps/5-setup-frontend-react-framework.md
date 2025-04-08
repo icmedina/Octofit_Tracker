@@ -2,7 +2,7 @@
 
 In this step, we will accomplish the following:
 
-- Setup the octofit-tracker frontend React framework.
+- Setup the octofit_tracker frontend React framework.
 - Update the following components to include the React framework:
   - src/App.js
   - src/index.js
